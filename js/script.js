@@ -16,6 +16,7 @@ setTimeout(function(){
         const userNumber = parseInt(prompt('Inserisci un numero:')); 
         userArray.push(userNumber);
         console.log(userArray);
+        //Controllo se i numeri sono inclusi e se si li stampo su un nuovo array
         if(random.includes(userNumber)){
             
             sameNumber.push(userNumber);
@@ -24,6 +25,7 @@ setTimeout(function(){
         }
         
     }
+    // Stampo il nuovo array
     usermessage.innerHTML = 'Hai azzeccato ' + sameNumber.length + ' numeri. I numeri azzeccati sono: ' + sameNumber ;
 }, 30000)
 
