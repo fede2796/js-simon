@@ -6,22 +6,23 @@
 //Faccio un alert con 5 numeri casuali
 const arrayrandom = generatearray (5 , 1, 100);
 alert('I numeri random da memorizzare sono:' + ' ' + arrayrandom);
+
 const usermessage = document.getElementById('user-message');
 const random = arrayrandom;
+
 //Dopo 30 secondi devo fare un promt che per cinque volte mi chiede 30 numeri e li salvo in un array
 const userArray = [];
 const sameNumber = [];
+
 setTimeout(function(){
     for(let i = 0; i < 5; i++){
+
         const userNumber = parseInt(prompt('Inserisci un numero:')); 
         userArray.push(userNumber);
-        console.log(userArray);
+        
         //Controllo se i numeri sono inclusi e se si li stampo su un nuovo array
         if(random.includes(userNumber)){
-            
             sameNumber.push(userNumber);
-            console.log(sameNumber);
-        
         }
         
     }
